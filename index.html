@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Frontend Mentor | Recipe page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme:{
+        extend:{
+          colors:{
+            "nutmeg": "hsl(14, 45%, 36%)",
+            "darkRaspberry": "hsl(332, 51%, 32%)",
+            "roseWhite": "hsl(330, 100%, 98%)",
+            "eggShell": "hsl(30, 54%, 90%)",
+            "lightGrey": "hsl(30, 18%, 87%)",
+            "wengeBrown": "hsl(30, 10%, 34%)",
+            "darkCharcoal": "hsl(24, 5%, 18%)",
+          },
+          fontFamily:{
+            "youngSerif": ["Young Serif", "sans-serif"],
+            "outfit": ["Outfit", "sans-serif"],
+          },
+          screens:{
+            "phone": {"max": "400px"},
+          },
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-eggShell h-screen flex flex-col justify-center items-center">
+  <main class="bg-white font-outfit flex flex-col items-start">
+    <header class="flex flex-col items-start">
+      <figure class="w-3/5">
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette on plate">
+      </figure>
+      <h1 class="font-youngSerif text-3xl">Simple Omelette Recipe</h1>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs <br>cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <article class="bg-roseWhite">
+        <h3 class="font-semibold">Preparation time</h3>
+        <ul>
+          <li><b>Total:</b> Approximately 10 minutes</li>
+          <li><b>Preparation:</b> 5 minutes</li>
+          <li><b>Cooking:</b> 5 minutes</li>
+        </ul>
+      </article>
+    </header>
+    <section>
+      <h2 class="font-youngSerif text-2xl">Ingredients</h2>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="font-youngSerif text-2xl">Instructions</h2>
+      <ol>
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are <br>well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the <br>pan to ensure 
+          the eggs evenly coat the surface.</li>
+        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly <br>runny in the 
+          middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it <br>over the 
+          fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+    </section>
+    <section>
+      <h2 class="font-youngSerif text-2xl">Nutrition</h2>
+      <p>The table below shows nutritional values per serving without the additional fillings.</p>
+      <table>
+        <tr>
+          <th class="font-normal">Calories</th>
+          <th>277kcal</th>
+        </tr>
+        <tr>
+          <th class="font-normal">Carbs</th>
+          <th>0g</th>
+        </tr>
+        <tr>
+          <th class="font-normal">Protein</th>
+          <th>20g</th>
+        </tr>
+        <tr>
+          <th class="font-normal">Fat</th>
+          <th>22g</th>
+        </tr>
+      </table>
+    </section>
+  </main>
+  <footer class="text-xs text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-blue-500">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Squing0" class="text-blue-500">Lyle Patterson</a>.
+  </footer>
+</body>
+</html>
