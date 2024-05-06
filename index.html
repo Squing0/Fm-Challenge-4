@@ -25,34 +25,41 @@
             "outfit": ["Outfit", "sans-serif"],
           },
           screens:{
-            "phone": {"max": "400px"},
+            "phoneS": {"max": "400px"},
+            "tabletS": {"max": "700px"},
+          },
+          spacing:{
+            "fullScreen": "44rem",
+          },
+          borderWidth:{
+            "1": "1px",
           },
         }
       }
     }
   </script>
 </head>
-<body class="bg-eggShell h-screen flex flex-col justify-center items-center">
-  <main class="bg-white font-outfit flex flex-col items-start">
-    <header class="flex flex-col items-start">
-      <figure class="w-3/5">
-        <img src="./assets/images/image-omelette.jpeg" alt="Omelette on plate">
+<body class="bg-eggShell min-h-screen flex flex-col items-center">
+  <main class="bg-white font-outfit flex flex-col items-start w-fullScreen tabletS:w-full tabletS:m-0 rounded-lg my-28 text-nutmeg">
+    <header class="flex flex-col items-start p-9 pb-6 space-y-6 phoneS:pt-0 phoneS:pr-0 phoneS:pl-0">
+      <figure>
+        <img class="w-full rounded-lg phoneS:absolute" src="./assets/images/image-omelette.jpeg" alt="Omelette on plate">
       </figure>
-      <h1 class="font-youngSerif text-3xl">Simple Omelette Recipe</h1>
-      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs <br>cooked 
+      <h1 class="font-youngSerif text-4xl text-darkCharcoal phoneS:px-4 phoneS:pt-44">Simple Omelette Recipe</h1>
+      <p class="phoneS:px-3">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs <br>cooked 
         to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-      <article class="bg-roseWhite">
-        <h3 class="font-semibold">Preparation time</h3>
-        <ul>
+      <article class="bg-roseWhite w-full rounded-lg p-6 pt-4 phoneS:px-9 phoneS:w-auto phoneS:m-auto">
+        <h3 class="font-semibold text-darkRaspberry text-lg pb-2">Preparation time</h3>
+        <ul class="list-disc list-inside space-y-2">
           <li><b>Total:</b> Approximately 10 minutes</li>
           <li><b>Preparation:</b> 5 minutes</li>
           <li><b>Cooking:</b> 5 minutes</li>
         </ul>
       </article>
     </header>
-    <section>
-      <h2 class="font-youngSerif text-2xl">Ingredients</h2>
-      <ul>
+    <section class="px-9 pb-6 ">
+      <h2 class="font-youngSerif text-2xl text-nutmeg pb-3">Ingredients</h2>
+      <ul class="list-disc list-inside space-y-2">
         <li>2-3 large eggs</li>
         <li>Salt, to taste</li>
         <li>Pepper, to taste</li>
@@ -60,9 +67,10 @@
         <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
       </ul>
     </section>
-    <section>
-      <h2 class="font-youngSerif text-2xl">Instructions</h2>
-      <ol>
+    <section class="px-9 pb-6">
+      <div class="border-b-1 mb-5 w-full"></div>
+      <h2 class="font-youngSerif text-2xl text-nutmeg pb-3">Instructions</h2>
+      <ol class="list-decimal list-inside space-y-2">
         <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are <br>well mixed. 
           You can add a tablespoon of water or milk for a fluffier texture.</li>
         <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
@@ -74,26 +82,27 @@
           fillings. Let it cook for another minute, then slide it onto a plate.</li>
         <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
       </ol>
+      <div class="border-b-1 mt-6"></div>
     </section>
-    <section>
-      <h2 class="font-youngSerif text-2xl">Nutrition</h2>
+    <section class="px-9 pb-9 space-y-3">
+      <h2 class="font-youngSerif text-2xl text-nutmeg">Nutrition</h2>
       <p>The table below shows nutritional values per serving without the additional fillings.</p>
-      <table>
-        <tr>
+      <table class="w-full border-separate border-spacing-2 text-left ml-5">
+        <tr class="border-b-1">
           <th class="font-normal">Calories</th>
-          <th>277kcal</th>
+          <td class="text-nutmeg font-bold">277kcal</d>
         </tr>
-        <tr>
+        <tr class="border-b-1">
           <th class="font-normal">Carbs</th>
-          <th>0g</th>
+          <td class="text-nutmeg font-bold">0g</td>
         </tr>
-        <tr>
+        <tr class="border-b-1">
           <th class="font-normal">Protein</th>
-          <th>20g</th>
+          <td class="text-nutmeg font-bold">20g</td>
         </tr>
         <tr>
           <th class="font-normal">Fat</th>
-          <th>22g</th>
+          <td class="text-nutmeg font-bold">22g</td>
         </tr>
       </table>
     </section>
